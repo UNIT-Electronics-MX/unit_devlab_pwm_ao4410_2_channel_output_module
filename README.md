@@ -10,6 +10,6 @@ Its compact layout and clearly labeled screw-terminal connectors make it **ideal
 Additionally, it features a **QWIIC-compatible** 4-pin header for plug-and-play wiring and daisy-chaining power and PWM signals with standard Qwiic cables.
 
 
-<a href="#"><img src="hardware/resources/UE0083-Modulo PWM v5.jpg" width="500px"><br/> UNIT PWM Module</a>
+<a href="#"><img src="hardware/resources/pwm_module.jpg" width="500px"><br/> UNIT PWM Module</a>
 
 

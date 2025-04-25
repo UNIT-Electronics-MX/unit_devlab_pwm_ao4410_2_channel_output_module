@@ -8,7 +8,7 @@
 
 # Pinout
 
-<a href="#"><img src="resources/PWM.jpg" width="500px"><br/> Pinout</a>
+<a href="#"><img src="resources/pwm_pinout.jpg" width="500px"><br/> Pinout</a>
 
 * **PWM Inputs**
 
