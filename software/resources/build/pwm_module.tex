@@ -56,7 +56,7 @@
 \makebox[\textwidth][l]{%
     \begin{minipage}[t]{\textwidth}
         \Large \textbf{PWM module Product Brief}\\[1.0em]
-        \normalsize Universal Programmer for AVR, ARM (CMSIS-DAP), and CPLD (MAX II) \\[0.3em]
+        \normalsize A two-channel PWM module that extends microcontroller PWM signals to drive high-power loads, featuring clearly labeled screw-terminal connectors and a JST 1mm 4 vias header for easy plug-and-play connectivity.\\[0.3em]
         \footnotesize\textsf{Version: 1.0 \hfill Modified: 2025-04-30}
     \end{minipage}%
 }
@@ -71,7 +71,7 @@
 \begin{minipage}[t]{0.62\textwidth}
 \setlength{\parskip}{0.75em}
 \justifying
-This two-channel PWM module PCB is purpose-built to amplify pulse-width modulation signals from a microcontroller, allowing it to switch external loads at voltages and currents well beyond the device’s native limits. Its compact design, featuring clearly labeled screw-terminal connectors, is ideal for applications such as motor speed control, high-power LED dimming, or any project requiring precise PWM regulation. Additionally, a QWIIC-compatible 4-pin header is included for convenient plug-and-play wiring and daisy-chaining of power and PWM signals with standard Qwiic cables.
+This two-channel PWM module PCB is purpose-built to amplify pulse-width modulation signals from a microcontroller, allowing it to switch external loads at voltages and currents well beyond the device’s native limits. Its compact design, featuring clearly labeled screw-terminal connectors, is ideal for applications such as motor speed control, high-power LED dimming, or any project requiring precise PWM regulation. Additionally, a JST 1mm 4 vias header is included for convenient plug-and-play wiring and daisy-chaining of power and PWM signals.
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.35\textwidth}
@@ -87,7 +87,10 @@ This two-channel PWM module PCB is purpose-built to amplify pulse-width modulati
 
 % Secciones técnicas
 \section*{Functional Description}
--\\ 
+- The module is designed to extend the PWM capabilities of microcontrollers, enabling them to control high-power loads such as motors or LEDs.\\ 
+- It features two independent channels, each with its own input and output control.\\ 
+- The input control accepts PWM signals from the microcontroller, while the output control drives the connected load.\\ 
+- The module is equipped with a JST 1mm 4 vias header for easy connection to power and PWM signals.\\ 
 
 \section*{Electrical Characteristics}
 -\\ 
@@ -98,7 +101,11 @@ This two-channel PWM module PCB is purpose-built to amplify pulse-width modulati
 
 
 \section*{Applications}
--\\ 
+- The module is suitable for applications requiring high-power PWM control, such as:\\ 
+- Motor speed control\\ 
+- High-power LED dimming\\ 
+- Any project requiring precise PWM regulation\\ 
+- The module can be used in robotics, automation, and other projects where high-power loads need to be controlled with precision.\\ 
 
 \vspace{1em}
 
@@ -160,7 +167,6 @@ PWM 2 & Dedicated input for control & Dedicated output for driving & MOSFET driv
 \begin{itemize}
 \begin{itemize}
 \item \href{docs/schematic.pdf}{Schematic PDF}
-\item \href{https://github.com/UNIT-Electronics/MAX1704X_lib}{MAX1704X Library}
 \end{itemize}
 \end{itemize}
 
