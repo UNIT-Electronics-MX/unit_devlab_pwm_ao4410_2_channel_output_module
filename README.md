@@ -19,12 +19,17 @@ Additionally, it features a **QWIIC-compatible** 4-pin header for plug-and-play 
 
 ## Key Features
 
+<div align="center">
+
+
 | Feature             | Details                                                 |
 |---------------------|---------------------------------------------------------|
-| 2-channel PWM       | Two independent channels for versatile control         |
-| 5V logic            | Compatible with 3.3V and 5V microcontrollers           |
+| 2-channel PWM       | Two independent channels for versatile control        |
+| 5V logic            | Compatible with 3.3V and 5V microcontrollers            |
 | 5V power supply     | Powers external devices up to 2A                        |
-| Qwiic connector      | 4-pin connector for easy integration                    |
+| Qwiic connector     | 4-pin connector for easy integration                   |
+
+</div>
 
 
 ## Typical Applications
