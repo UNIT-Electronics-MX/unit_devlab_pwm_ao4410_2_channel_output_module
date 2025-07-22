@@ -4,7 +4,7 @@ This two-channel PWM module PCB is designed to amplify pulse-width modulation si
 
 <div align="center">
     <a href="#">
-        <img src="hardware/resources/product.png" width="400px"><br/>UNIT PWM Module
+        <img src="hardware/resources/img/img_sku_0054_1.png" width="400px"><br/>UNIT PWM Module
     </a>
 </div>
 
@@ -47,4 +47,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Resources
 
 - [Product brief](./pwm_module.pdf)
-- [Schematic](./hardware/UE0089-SCH-PWM-001-T.pdf)
+- [Schematic](<hardware/UE0083-SCH-Modulo PWM-001-T.pdf>)
