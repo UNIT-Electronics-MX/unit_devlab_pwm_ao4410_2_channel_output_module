@@ -81,7 +81,7 @@ Works with:
 
 ## Downloads
 
-- [Schematic PDF](docs/schematic.pdf)
+[Schematic PDF](<../../hardware/UE0083-SCH-Modulo PWM-001-T.pdf>)
 
 ## Purchase
 
