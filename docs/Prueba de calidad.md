@@ -71,6 +71,8 @@
 
     ```
    - Conecta el pin GPIO2 al canal PWM1 y su GND respectivamente 
+   - Conecta una carga a la terminal de potencia, puede ser un motor DC, un LED, ETC.
+  
 
 5. **Aprobación**
 
