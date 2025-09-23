@@ -32,7 +32,7 @@
 
 <div align="center">
 
-<a href="./resources/unit_topology_v_0_0_1_ue0083_PWM-Module.png"><img src="./resources/unit_topology_v_0_0_1_ue0083_PWM-Module.png" width="500px"><br/> Dimensions</a>
+<a href="./resources/unit_topology_v_0_0_1_ue0083_PWM-Module.png"><img src="./resources/unit_topology_v_0_0_1_ue0083_PWM-Module.png" width="500px"><br/> Topology</a>
 
 | Ref.  | Description                                                                 |
 |-------|-----------------------------------------------------------------------------|
