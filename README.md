@@ -4,7 +4,7 @@ This two-channel PWM module PCB is designed to amplify pulse-width modulation si
 
 <div align="center">
     <a href="#">
-        <img src="hardware/resources/img/img_sku_0054_1.png" width="400px"><br/>UNIT PWM Module
+        <img src="./hardware/resources/unit_top_v_0_0_1_ue0083_PWM-Module.png"width="400px"><br/>UNIT PWM Module
     </a>
 </div>
 
