@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Automated Documentation Builder for UNIT PWM Module
+Automated Documentation Builder for UNIT PWM module
 This script automates the complete mdBook documentation generation and deployment process.
 """
 
@@ -22,7 +22,7 @@ class DocumentationBuilder:
         self.extract_script = Path(__file__).parent / "smart-extract-docs.py"
         self.docs_path = self.project_root / "docs"
         
-        print("Documentation Builder for UNIT Touch Capacitive Sensor")
+        print("Documentation Builder for UNIT PWM module")
         print(f"Project root: {self.project_root}")
         print(f"Book path: {self.book_path}")
         print(f"Protected docs/ path: {self.docs_path} (NEVER MODIFIED)")
