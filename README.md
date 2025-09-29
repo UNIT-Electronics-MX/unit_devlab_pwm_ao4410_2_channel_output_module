@@ -19,7 +19,7 @@ The UNIT PWM Module is a compact, two-channel PCB designed to amplify pulse-widt
 [<img src="https://img.shields.io/badge/Product%20Wiki-blue?style=for-the-badge" alt="Product Wiki">](https://unit-electronics-mx.github.io/unit_pwm_module/)
 [<img src="https://img.shields.io/badge/Datasheet-green?style=for-the-badge" alt="Datasheet">](hardware/resources/)
 [<img src="https://img.shields.io/badge/Buy%20Now-orange?style=for-the-badge" alt="Buy Now">](https://uelectronics.com/)
-[<img src="https://img.shields.io/badge/Getting%20Started-purple?style=for-the-badge" alt="Getting Started">](https://unit-electronics-mx.github.io/unit_pwm_module/getting-started)
+[<img src="https://img.shields.io/badge/Getting%20Started-purple?style=for-the-badge" alt="Getting Started">](https://unit-electronics-mx.github.io/unit_pwm_module/mdbook/software/getting-started.html)
 
 </div>
 
