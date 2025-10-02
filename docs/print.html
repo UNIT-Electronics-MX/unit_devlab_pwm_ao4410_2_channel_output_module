@@ -220,9 +220,16 @@
 Please refer to <a href="LICENSE.html"><code>LICENSE.md</code></a> for full terms.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="hardware-overview"><a class="header" href="#hardware-overview">Hardware Overview</a></h1>
 <div align="center">
-<div align="center"><a href="hardware/../resources/unit_schematic_v_0_0_1_ue0083_PWM-Module.pdf"><img src="hardware/../resources/img/Schematics_icon.jpg?raw=false" style="max-width: 500px; height: auto;" alt="Schematics"><br/> Schematics</a></div>
+<div align="center"><a href="hardware/../resources/unit_sch_v_0_0_1_ue0083_pwm_module.pdf"><img src="hardware/../resources/Schematics_icon.jpg?raw=false" style="max-width: 500px; height: auto;" alt="Schematics"><br/> Schematics</a></div>
 </div>
-<h1 id="pinout"><a class="header" href="#pinout">Pinout</a></h1>
+<h2 id="key-technical-specifications"><a class="header" href="#key-technical-specifications">Key Technical Specifications</a></h2>
+<ul>
+<li><strong>Input Voltage:</strong> -</li>
+<li><strong>Output Current:</strong> -</li>
+<li><strong>PWM Frequency:</strong> -</li>
+<li><strong>Control Interface:</strong> JST 1mm Connector</li>
+</ul>
+<h2 id="pinout"><a class="header" href="#pinout">Pinout</a></h2>
 <div align="center">
 <div align="center"><a href="hardware/overview.html#"><img src="hardware/../resources/unit_pinout_v_0_0_1_ue0054_pwm_module_en.jpg" style="max-width: 500px; height: auto;" alt="Pinout"><br/> Pinout</a></div>
 <br/><br/>
@@ -232,11 +239,44 @@ Please refer to <a href="LICENSE.html"><code>LICENSE.md</code></a> for full term
 </tbody></table>
 </div><br/>
 </div>
-<h1 id="dimensions"><a class="header" href="#dimensions">Dimensions</a></h1>
+<h2 id="dimensions"><a class="header" href="#dimensions">Dimensions</a></h2>
 <div align="center">
 <div align="center"><a href="hardware/../resources/unit_dimension_v_0_0_1_ue0083_PWM-Module.png"><img src="hardware/../resources/unit_dimension_v_0_0_1_ue0083_PWM-Module.png" style="max-width: 500px; height: auto;" alt="Dimensions"><br/> Dimensions</a></div>
 </div>
-<h1 id="topology"><a class="header" href="#topology">Topology</a></h1>
+<h2 id="topology"><a class="header" href="#topology">Topology</a></h2>
+<div align="center">
+<div align="center"><a href="hardware/../resources/unit_topology_v_0_0_1_ue0083_PWM-Module.png"><img src="hardware/../resources/unit_topology_v_0_0_1_ue0083_PWM-Module.png" style="max-width: 500px; height: auto;" alt="Topology"><br/> Topology</a></div>
+<div class="table-wrapper"><table><thead><tr><th>Ref.</th><th>Description</th></tr></thead><tbody>
+<tr><td>SW</td><td>Dip Switch for coupling grounds</td></tr>
+<tr><td>L1</td><td>Channel 1 PWM LED</td></tr>
+<tr><td>L2</td><td>Channel 2 PWM LED</td></tr>
+<tr><td>J1</td><td>Screw Terminal Block for Channel 1 Load</td></tr>
+<tr><td>J2</td><td>Screw Terminal Block for Channel 2 Load</td></tr>
+<tr><td>J3</td><td>JST 1mm Connector for input signals</td></tr>
+<tr><td>JP1</td><td>Header for Channel 1 mode selection</td></tr>
+<tr><td>JP2</td><td>Header for input signals</td></tr>
+<tr><td>JP3</td><td>Header for Channel 2 mode selection</td></tr>
+</tbody></table>
+</div></div><div style="break-before: page; page-break-before: always;"></div><h1 id="key-technical-specifications-1"><a class="header" href="#key-technical-specifications-1">Key Technical Specifications</a></h1>
+<ul>
+<li><strong>Input Voltage:</strong> -</li>
+<li><strong>Output Current:</strong> -</li>
+<li><strong>PWM Frequency:</strong> -</li>
+<li><strong>Control Interface:</strong> JST 1mm Connector</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="pinout-1"><a class="header" href="#pinout-1">Pinout</a></h1>
+<div align="center">
+<div align="center"><a href="hardware/pinout.html#"><img src="hardware/../resources/unit_pinout_v_0_0_1_ue0054_pwm_module_en.jpg" style="max-width: 500px; height: auto;" alt="Pinout"><br/> Pinout</a></div>
+<br/><br/>
+<div class="table-wrapper"><table><thead><tr><th>Channel</th><th>Description</th><th>Control Pins</th><th>Power Pins</th><th>Load Terminals</th><th>Typical Use</th></tr></thead><tbody>
+<tr><td><strong>PWM Channel 1</strong></td><td>MOSFET-based driver that amplifies MCU’s PWM output to switch a heavier external load</td><td>PWM1, GND</td><td>VCC1, GND</td><td>Load1</td><td>DC motors, high-power LEDs, solenoids</td></tr>
+<tr><td><strong>PWM Channel 2</strong></td><td>Identical high-current PWM driver on a second channel</td><td>PWM2, GND</td><td>VCC2, GND</td><td>Load2</td><td>Same as Channel 1</td></tr>
+</tbody></table>
+</div><br/>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="dimensions-1"><a class="header" href="#dimensions-1">Dimensions</a></h1>
+<div align="center">
+<div align="center"><a href="hardware/../resources/unit_dimension_v_0_0_1_ue0083_PWM-Module.png"><img src="hardware/../resources/unit_dimension_v_0_0_1_ue0083_PWM-Module.png" style="max-width: 500px; height: auto;" alt="Dimensions"><br/> Dimensions</a></div>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="topology-1"><a class="header" href="#topology-1">Topology</a></h1>
 <div align="center">
 <div align="center"><a href="hardware/../resources/unit_topology_v_0_0_1_ue0083_PWM-Module.png"><img src="hardware/../resources/unit_topology_v_0_0_1_ue0083_PWM-Module.png" style="max-width: 500px; height: auto;" alt="Topology"><br/> Topology</a></div>
 <div class="table-wrapper"><table><thead><tr><th>Ref.</th><th>Description</th></tr></thead><tbody>
@@ -251,6 +291,167 @@ Please refer to <a href="LICENSE.html"><code>LICENSE.md</code></a> for full term
 <tr><td>JP3</td><td>Header for Channel 2 mode selection</td></tr>
 </tbody></table>
 </div></div><div style="break-before: page; page-break-before: always;"></div><h1 id="getting-started"><a class="header" href="#getting-started">Getting Started</a></h1>
+<p>This directory contains example code demonstrating how to use the PWM AO4410 2-Channel Output Module with different programming platforms.</p>
+<h2 id="overview-1"><a class="header" href="#overview-1">Overview</a></h2>
+<p>The PWM AO4410 module amplifies PWM signals from microcontrollers to control external loads at higher voltages and currents. The examples show how to generate PWM signals that can be used for:</p>
+<ul>
+<li>Motor speed control</li>
+<li>High-power LED dimming</li>
+<li>Variable power output control</li>
+<li>Load switching applications</li>
+</ul>
+<h2 id="available-examples"><a class="header" href="#available-examples">Available Examples</a></h2>
+<h3 id="-carduino-examples-examplesc"><a class="header" href="#-carduino-examples-examplesc">📁 C/Arduino Examples (<code>examples/c/</code>)</a></h3>
+<h4 id="pwmino---led-fade-with-pwm-control"><a class="header" href="#pwmino---led-fade-with-pwm-control"><code>pwm.ino</code> - LED Fade with PWM Control</a></h4>
+<p><strong>Platform:</strong> Arduino IDE compatible boards (Arduino Uno, ESP32, etc.)</p>
+<p><strong>Description:</strong>
+This example demonstrates basic PWM control by fading an LED up and down. It shows how to:</p>
+<ul>
+<li>Configure a PWM output pin</li>
+<li>Generate variable duty cycle signals</li>
+<li>Monitor PWM duty cycle values via Serial Monitor</li>
+<li>Create smooth fading effects</li>
+</ul>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Uses <code>analogWrite()</code> function for PWM generation</li>
+<li>Configurable brightness step size</li>
+<li>Serial output for debugging and monitoring</li>
+<li>Simple fade up/down pattern</li>
+</ul>
+<p><strong>Hardware Connections:</strong></p>
+<ul>
+<li>Connect PWM output pin (default: pin 9) to the module's PWM input</li>
+<li>Connect LED or load to the module's output terminals</li>
+<li>Ensure proper power supply connections</li>
+</ul>
+<p><strong>Usage:</strong></p>
+<ol>
+<li>Open in Arduino IDE</li>
+<li>Select your board and port</li>
+<li>Upload the sketch</li>
+<li>Open Serial Monitor at 115200 baud</li>
+<li>Observe the LED fading and duty cycle values</li>
+</ol>
+<h3 id="-python-examples-examplespython"><a class="header" href="#-python-examples-examplespython">📁 Python Examples (<code>examples/python/</code>)</a></h3>
+<h4 id="pwmpy---micropython-pwm-control"><a class="header" href="#pwmpy---micropython-pwm-control"><code>pwm.py</code> - MicroPython PWM Control</a></h4>
+<p><strong>Platform:</strong> MicroPython (ESP32, Raspberry Pi Pico, etc.)</p>
+<p><strong>Description:</strong>
+This MicroPython example shows how to control PWM outputs using the <code>machine.PWM</code> class. It demonstrates:</p>
+<ul>
+<li>High-resolution PWM control (16-bit duty cycle)</li>
+<li>Frequency configuration</li>
+<li>Percentage-based duty cycle calculation</li>
+<li>Continuous fading loop</li>
+</ul>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>16-bit duty cycle resolution (0-65535)</li>
+<li>Configurable PWM frequency (default: 1 kHz)</li>
+<li>Percentage calculation for easy understanding</li>
+<li>Continuous fade pattern</li>
+</ul>
+<p><strong>Hardware Connections:</strong></p>
+<ul>
+<li>Connect PWM output pin (default: GPIO 2) to the module's PWM input</li>
+<li>Connect LED or load to the module's output terminals</li>
+<li>Ensure proper power supply connections</li>
+</ul>
+<p><strong>Usage:</strong></p>
+<ol>
+<li>Upload to your MicroPython device</li>
+<li>Run the script</li>
+<li>Observe the console output showing duty cycle values</li>
+<li>Watch the connected load fade smoothly</li>
+</ol>
+<h2 id="module-specifications"><a class="header" href="#module-specifications">Module Specifications</a></h2>
+<h3 id="pwm-input-requirements"><a class="header" href="#pwm-input-requirements">PWM Input Requirements</a></h3>
+<ul>
+<li><strong>Voltage:</strong> 3.3V or 5V logic levels</li>
+<li><strong>Frequency Range:</strong> 1 Hz - 100 kHz (recommended)</li>
+<li><strong>Duty Cycle:</strong> 0-100%</li>
+</ul>
+<h3 id="output-characteristics"><a class="header" href="#output-characteristics">Output Characteristics</a></h3>
+<ul>
+<li><strong>Channels:</strong> 2 independent outputs</li>
+<li><strong>Maximum Voltage:</strong> 30V DC</li>
+<li><strong>Maximum Current:</strong> 4A per channel</li>
+<li><strong>MOSFET:</strong> AO4410 N-channel</li>
+<li><strong>Control:</strong> Low-side switching</li>
+</ul>
+<h2 id="connection-guide"><a class="header" href="#connection-guide">Connection Guide</a></h2>
+<h3 id="qwiic4-pin-header-connections"><a class="header" href="#qwiic4-pin-header-connections">QWIIC/4-Pin Header Connections</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Pin</th><th>Function</th><th>Color (Standard)</th></tr></thead><tbody>
+<tr><td>1</td><td>GND</td><td>Black</td></tr>
+<tr><td>2</td><td>VCC</td><td>Red</td></tr>
+<tr><td>3</td><td>PWM1</td><td>Blue</td></tr>
+<tr><td>4</td><td>PWM2</td><td>Yellow</td></tr>
+</tbody></table>
+</div>
+<h3 id="screw-terminal-connections"><a class="header" href="#screw-terminal-connections">Screw Terminal Connections</a></h3>
+<ul>
+<li><strong>VIN+/VIN-:</strong> External power supply for loads</li>
+<li><strong>OUT1+/OUT1-:</strong> Channel 1 output to load</li>
+<li><strong>OUT2+/OUT2-:</strong> Channel 2 output to load</li>
+</ul>
+<h2 id="safety-considerations"><a class="header" href="#safety-considerations">Safety Considerations</a></h2>
+<p>⚠️ <strong>Important Safety Notes:</strong></p>
+<ul>
+<li>Always ensure proper power supply ratings</li>
+<li>Use appropriate wire gauge for current requirements</li>
+<li>Verify load compatibility before connection</li>
+<li>Never exceed maximum voltage/current ratings</li>
+<li>Ensure proper heat dissipation for high-power applications</li>
+</ul>
+<h2 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h2>
+<h3 id="common-issues"><a class="header" href="#common-issues">Common Issues:</a></h3>
+<ol>
+<li>
+<p><strong>No PWM Output:</strong></p>
+<ul>
+<li>Check PWM signal connections</li>
+<li>Verify code is generating PWM on correct pin</li>
+<li>Ensure proper power supply</li>
+</ul>
+</li>
+<li>
+<p><strong>Insufficient Load Power:</strong></p>
+<ul>
+<li>Check external power supply voltage/current</li>
+<li>Verify load requirements are within module limits</li>
+</ul>
+</li>
+<li>
+<p><strong>Erratic Behavior:</strong></p>
+<ul>
+<li>Check for proper grounding</li>
+<li>Verify PWM frequency is within acceptable range</li>
+<li>Ensure stable power supply</li>
+</ul>
+</li>
+</ol>
+<h2 id="getting-started-1"><a class="header" href="#getting-started-1">Getting Started</a></h2>
+<ol>
+<li><strong>Choose your platform</strong> (Arduino/C or MicroPython)</li>
+<li><strong>Wire the module</strong> according to the connection guide</li>
+<li><strong>Load the example code</strong> for your platform</li>
+<li><strong>Modify parameters</strong> as needed for your application</li>
+<li><strong>Test with a simple load</strong> (LED) before connecting high-power devices</li>
+</ol>
+<h2 id="additional-resources"><a class="header" href="#additional-resources">Additional Resources</a></h2>
+<ul>
+<li><a href="software/../hardware/README.html">Hardware Documentation</a></li>
+<li><a href="software/../resources/">Schematic Files</a></li>
+<li><a href="software/../resources/">Product Datasheet</a></li>
+<li><a href="https://unit-electronics-mx.github.io/unit_pwm_module/">Online Documentation</a></li>
+</ul>
+<h2 id="support"><a class="header" href="#support">Support</a></h2>
+<p>For technical support and questions:</p>
+<ul>
+<li>GitHub Issues: <a href="https://github.com/UNIT-Electronics-MX/unit_devlab_pwm_ao4410_2_channel_output_module/issues">Open an issue</a></li>
+<li>Website: <a href="https://uelectronics.com/">uelectronics.com</a></li>
+<li>Documentation: <a href="https://unit-electronics-mx.github.io/unit_pwm_module/">Product Wiki</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="examples"><a class="header" href="#examples">Examples</a></h1>
 <h2 id="arduinoc-examples"><a class="header" href="#arduinoc-examples">Arduino/C++ Examples</a></h2>
 <p>The following examples demonstrate various features of this development board.</p>
@@ -308,7 +509,7 @@ while True:
 <p>Product datasheet not found in hardware directory.</p>
 <h2 id="hardware-resources"><a class="header" href="#hardware-resources">Hardware Resources</a></h2>
 <ul>
-<li>Schematic Diagram - Not found (looking for unit_sch_*.pdf)</li>
+<li><a href="resources/unit_sch_v_0_0_1_ue0083_pwm_module.pdf">Schematic Diagram</a> - Complete circuit schematic</li>
 <li><a href="hardware/pinout.html">Pinout Reference</a> - Pin configuration details</li>
 </ul>
 <h2 id="software-resources"><a class="header" href="#software-resources">Software Resources</a></h2>
@@ -323,7 +524,7 @@ while True:
 </ul>
 <h2 id="quick-reference"><a class="header" href="#quick-reference">Quick Reference</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Resource</th><th>Description</th><th>Link</th></tr></thead><tbody>
-<tr><td><strong>Schematic</strong></td><td>Circuit diagram</td><td>Not found</td></tr>
+<tr><td><strong>Schematic</strong></td><td>Circuit diagram</td><td><a href="resources/unit_sch_v_0_0_1_ue0083_pwm_module.pdf">PDF</a></td></tr>
 <tr><td><strong>Pinout</strong></td><td>Pin configuration</td><td><a href="hardware/pinout.html">View</a></td></tr>
 <tr><td><strong>Examples</strong></td><td>Code samples</td><td><a href="software/examples.html">View</a></td></tr>
 <tr><td><strong>Setup Guide</strong></td><td>Getting started</td><td><a href="software/getting-started.html">View</a></td></tr>
