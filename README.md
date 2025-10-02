@@ -1,8 +1,8 @@
-# UNIT PWM Module
+# DevLab: PWM AO4410 2-Channel Output Module
 
 ## Introduction
 
-The UNIT PWM Module is a compact, two-channel PCB designed to amplify pulse-width modulation signals from a microcontroller. It enables reliable switching of external loads at higher voltages and currents than the microcontroller can natively handle. With its clearly labeled screw-terminal connectors, the module is well-suited for motor speed control, high-power LED dimming, and other projects requiring precise power regulation via PWM. The board also includes a QWIIC-compatible 4-pin header, allowing for easy plug-and-play wiring and daisy-chaining of power and PWM signals using standard Qwiic cables.
+The DevLab PWM AO4410 2-Channel Output Module is a compact, two-channel PCB designed to amplify pulse-width modulation signals from a microcontroller. It enables reliable switching of external loads at higher voltages and currents than the microcontroller can natively handle. With its clearly labeled screw-terminal connectors, the module is well-suited for motor speed control, high-power LED dimming, and other projects requiring precise power regulation via PWM. The board also includes a QWIIC-compatible 4-pin header, allowing for easy plug-and-play wiring and daisy-chaining of power and PWM signals using standard Qwiic cables.
 
 
 <div align="center">
@@ -23,11 +23,11 @@ The UNIT PWM Module is a compact, two-channel PCB designed to amplify pulse-widt
 
 </div>
 
-
-
-## 📦 Overview
-
 <div align="center">
+
+## Overview
+
+
 
 
 | Feature             | Details                                                 |
@@ -40,7 +40,7 @@ The UNIT PWM Module is a compact, two-channel PCB designed to amplify pulse-widt
 </div>
 
 
-## 🧪 Use Cases
+## Use Cases
 
 - Motor speed and direction control for DC motors
 - Brightness control for high-power LEDs
@@ -48,15 +48,15 @@ The UNIT PWM Module is a compact, two-channel PCB designed to amplify pulse-widt
 - Efficient power regulation for various loads
 - Amplifying PWM signals for long-distance transmission
 
-## 📚 Resources
+## Resources
 
 
 - [Pinout Diagram](hardware/resources/unit_pinout_v_0_0_1_ue0054_pwm_module_en.png)
-- [Schematic Diagram](hardware/UE0083-SCH-Modulo_PWM-001-T.pdf)
+- [Schematic Diagram](hardware/unit_schematic_v_0_0_1_ue0083_PWM-Module.pdf)
 - [Code Examples](software/examples)
 - [Purchase Link](https://uelectronics.com/)
 
-## 📝 License
+## License
 
 All hardware and documentation in this project are licensed under the **MIT License**.  
 Please refer to [`LICENSE.md`](LICENSE.md) for full terms.
