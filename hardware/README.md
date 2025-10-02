@@ -2,10 +2,17 @@
 
 <div align="center">
 
-<a href="./unit_schematic_v_0_0_1_ue0083_PWM-Module.pdf"><img src="resources/img/Schematics_icon.jpg?raw=false" width="450px"><br/> Schematics</a>
+<a href="./unit_sch_v_0_0_1_ue0083_pwm_module.pdf"><img src="resources/Schematics_icon.jpg?raw=false" width="450px"><br/> Schematics</a>
 </div>
 
-# Pinout
+## Key Technical Specifications
+
+- **Input Voltage:** -
+- **Output Current:** -
+- **PWM Frequency:** -
+- **Control Interface:** JST 1mm Connector
+
+## Pinout
 
 <div align="center">
 
@@ -20,7 +27,7 @@
 <br/>
 </div>
 
-# Dimensions
+## Dimensions
 
 <div align="center">
 
@@ -28,7 +35,7 @@
 
 </div>
 
-# Topology
+## Topology
 
 <div align="center">
 
