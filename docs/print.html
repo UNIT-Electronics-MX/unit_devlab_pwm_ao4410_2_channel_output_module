@@ -195,9 +195,11 @@
 <h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Feature</th><th>Details</th></tr></thead><tbody>
 <tr><td>2-channel PWM</td><td>Two independent channels for versatile control</td></tr>
-<tr><td>5V logic</td><td>Compatible with 3.3V and 5V microcontrollers</td></tr>
-<tr><td>5V power supply</td><td>Powers external devices up to 2A</td></tr>
+<tr><td>5V &amp; 3.3V logic</td><td>Compatible with 3.3V and 5V microcontrollers</td></tr>
+<tr><td>External loads</td><td>Power external devices up to 200 W</td></tr>
+<tr><td>Mode selection</td><td>Use "direct PWM" or an isolated mode with optocoupler</td></tr>
 <tr><td>Qwiic connector</td><td>4-pin connector for easy integration</td></tr>
+<tr><td>Isolated grounds</td><td>Couple or isolate grounds using a DIP switch</td></tr>
 </tbody></table>
 </div></div>
 <h2 id="use-cases"><a class="header" href="#use-cases">Use Cases</a></h2>
@@ -223,12 +225,20 @@ Please refer to <a href="LICENSE.html"><code>LICENSE.md</code></a> for full term
 <div align="center"><a href="hardware/../resources/unit_sch_v_0_0_1_ue0083_pwm_module.pdf"><img src="hardware/../resources/Schematics_icon.jpg?raw=false" style="max-width: 500px; height: auto;" alt="Schematics"><br/> Schematics</a></div>
 </div>
 <h2 id="key-technical-specifications"><a class="header" href="#key-technical-specifications">Key Technical Specifications</a></h2>
+<div align="center">
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center"><strong>Parameter</strong></th><th style="text-align: center"><strong>Description</strong></th><th style="text-align: center"><strong>Min</strong></th><th style="text-align: center"><strong>Max</strong></th><th style="text-align: center"><strong>Unit</strong></th></tr></thead><tbody>
+<tr><td style="text-align: center">Vin</td><td style="text-align: center">Input voltage to power on the module</td><td style="text-align: center">3.3</td><td style="text-align: center">5</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">V Load*</td><td style="text-align: center">Maximum voltage for the external load</td><td style="text-align: center">-</td><td style="text-align: center">30</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">I Load*</td><td style="text-align: center">Maximum current for the external load</td><td style="text-align: center">-</td><td style="text-align: center">15</td><td style="text-align: center">A</td></tr>
+<tr><td style="text-align: center">P*</td><td style="text-align: center">Maximum power at load</td><td style="text-align: center">-</td><td style="text-align: center">200</td><td style="text-align: center">W</td></tr>
+</tbody></table>
+</div></div>
 <ul>
-<li><strong>Input Voltage:</strong> -</li>
-<li><strong>Output Current:</strong> -</li>
-<li><strong>PWM Frequency:</strong> -</li>
-<li><strong>Control Interface:</strong> JST 1mm Connector</li>
+<li>A DIP switch is provided to couple or isolate the microcontroller ground from the load ground.</li>
+<li>Mode selection**: use jumper bridges to choose "Direct mode" (grounds coupled) or "Isolated mode" (grounds isolated) for improved protection.</li>
 </ul>
+<p>*<strong>These values were tested at 1 kHz. Performance may vary at other frequencies.</strong></p>
+<p>**<strong>Use the jumper bridges and the DIP switch to change between Direct and Isolated modes.</strong></p>
 <h2 id="pinout"><a class="header" href="#pinout">Pinout</a></h2>
 <div align="center">
 <div align="center"><a href="hardware/overview.html#"><img src="hardware/../resources/unit_pinout_v_0_0_1_ue0054_pwm_module_en.jpg" style="max-width: 500px; height: auto;" alt="Pinout"><br/> Pinout</a></div>
@@ -238,10 +248,6 @@ Please refer to <a href="LICENSE.html"><code>LICENSE.md</code></a> for full term
 <tr><td><strong>PWM Channel 2</strong></td><td>Identical high-current PWM driver on a second channel</td><td>PWM2, GND</td><td>VCC2, GND</td><td>Load2</td><td>Same as Channel 1</td></tr>
 </tbody></table>
 </div><br/>
-</div>
-<h2 id="dimensions"><a class="header" href="#dimensions">Dimensions</a></h2>
-<div align="center">
-<div align="center"><a href="hardware/../resources/unit_dimension_v_0_0_1_ue0083_PWM-Module.png"><img src="hardware/../resources/unit_dimension_v_0_0_1_ue0083_PWM-Module.png" style="max-width: 500px; height: auto;" alt="Dimensions"><br/> Dimensions</a></div>
 </div>
 <h2 id="topology"><a class="header" href="#topology">Topology</a></h2>
 <div align="center">
@@ -257,13 +263,25 @@ Please refer to <a href="LICENSE.html"><code>LICENSE.md</code></a> for full term
 <tr><td>JP2</td><td>Header for input signals</td></tr>
 <tr><td>JP3</td><td>Header for Channel 2 mode selection</td></tr>
 </tbody></table>
-</div></div><div style="break-before: page; page-break-before: always;"></div><h1 id="key-technical-specifications-1"><a class="header" href="#key-technical-specifications-1">Key Technical Specifications</a></h1>
+</div></div>
+<h2 id="dimensions"><a class="header" href="#dimensions">Dimensions</a></h2>
+<div align="center">
+<div align="center"><a href="hardware/../resources/unit_dimension_v_0_0_1_ue0083_PWM-Module.png"><img src="hardware/../resources/unit_dimension_v_0_0_1_ue0083_PWM-Module.png" style="max-width: 500px; height: auto;" alt="Dimensions"><br/> Dimensions</a></div>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="key-technical-specifications-1"><a class="header" href="#key-technical-specifications-1">Key Technical Specifications</a></h1>
+<div align="center">
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center"><strong>Parameter</strong></th><th style="text-align: center"><strong>Description</strong></th><th style="text-align: center"><strong>Min</strong></th><th style="text-align: center"><strong>Max</strong></th><th style="text-align: center"><strong>Unit</strong></th></tr></thead><tbody>
+<tr><td style="text-align: center">Vin</td><td style="text-align: center">Input voltage to power on the module</td><td style="text-align: center">3.3</td><td style="text-align: center">5</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">V Load*</td><td style="text-align: center">Maximum voltage for the external load</td><td style="text-align: center">-</td><td style="text-align: center">30</td><td style="text-align: center">V</td></tr>
+<tr><td style="text-align: center">I Load*</td><td style="text-align: center">Maximum current for the external load</td><td style="text-align: center">-</td><td style="text-align: center">15</td><td style="text-align: center">A</td></tr>
+<tr><td style="text-align: center">P*</td><td style="text-align: center">Maximum power at load</td><td style="text-align: center">-</td><td style="text-align: center">200</td><td style="text-align: center">W</td></tr>
+</tbody></table>
+</div></div>
 <ul>
-<li><strong>Input Voltage:</strong> -</li>
-<li><strong>Output Current:</strong> -</li>
-<li><strong>PWM Frequency:</strong> -</li>
-<li><strong>Control Interface:</strong> JST 1mm Connector</li>
+<li>A DIP switch is provided to couple or isolate the microcontroller ground from the load ground.</li>
+<li>Mode selection**: use jumper bridges to choose "Direct mode" (grounds coupled) or "Isolated mode" (grounds isolated) for improved protection.</li>
 </ul>
+<p>*<strong>These values were tested at 1 kHz. Performance may vary at other frequencies.</strong></p>
+<p>**<strong>Use the jumper bridges and the DIP switch to change between Direct and Isolated modes.</strong></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="pinout-1"><a class="header" href="#pinout-1">Pinout</a></h1>
 <div align="center">
 <div align="center"><a href="hardware/pinout.html#"><img src="hardware/../resources/unit_pinout_v_0_0_1_ue0054_pwm_module_en.jpg" style="max-width: 500px; height: auto;" alt="Pinout"><br/> Pinout</a></div>
@@ -273,9 +291,6 @@ Please refer to <a href="LICENSE.html"><code>LICENSE.md</code></a> for full term
 <tr><td><strong>PWM Channel 2</strong></td><td>Identical high-current PWM driver on a second channel</td><td>PWM2, GND</td><td>VCC2, GND</td><td>Load2</td><td>Same as Channel 1</td></tr>
 </tbody></table>
 </div><br/>
-</div><div style="break-before: page; page-break-before: always;"></div><h1 id="dimensions-1"><a class="header" href="#dimensions-1">Dimensions</a></h1>
-<div align="center">
-<div align="center"><a href="hardware/../resources/unit_dimension_v_0_0_1_ue0083_PWM-Module.png"><img src="hardware/../resources/unit_dimension_v_0_0_1_ue0083_PWM-Module.png" style="max-width: 500px; height: auto;" alt="Dimensions"><br/> Dimensions</a></div>
 </div><div style="break-before: page; page-break-before: always;"></div><h1 id="topology-1"><a class="header" href="#topology-1">Topology</a></h1>
 <div align="center">
 <div align="center"><a href="hardware/../resources/unit_topology_v_0_0_1_ue0083_PWM-Module.png"><img src="hardware/../resources/unit_topology_v_0_0_1_ue0083_PWM-Module.png" style="max-width: 500px; height: auto;" alt="Topology"><br/> Topology</a></div>
@@ -290,7 +305,10 @@ Please refer to <a href="LICENSE.html"><code>LICENSE.md</code></a> for full term
 <tr><td>JP2</td><td>Header for input signals</td></tr>
 <tr><td>JP3</td><td>Header for Channel 2 mode selection</td></tr>
 </tbody></table>
-</div></div><div style="break-before: page; page-break-before: always;"></div><h1 id="getting-started"><a class="header" href="#getting-started">Getting Started</a></h1>
+</div></div><div style="break-before: page; page-break-before: always;"></div><h1 id="dimensions-1"><a class="header" href="#dimensions-1">Dimensions</a></h1>
+<div align="center">
+<div align="center"><a href="hardware/../resources/unit_dimension_v_0_0_1_ue0083_PWM-Module.png"><img src="hardware/../resources/unit_dimension_v_0_0_1_ue0083_PWM-Module.png" style="max-width: 500px; height: auto;" alt="Dimensions"><br/> Dimensions</a></div>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="getting-started"><a class="header" href="#getting-started">Getting Started</a></h1>
 <p>This directory contains example code demonstrating how to use the PWM AO4410 2-Channel Output Module with different programming platforms.</p>
 <h2 id="overview-1"><a class="header" href="#overview-1">Overview</a></h2>
 <p>The PWM AO4410 module amplifies PWM signals from microcontrollers to control external loads at higher voltages and currents. The examples show how to generate PWM signals that can be used for:</p>
