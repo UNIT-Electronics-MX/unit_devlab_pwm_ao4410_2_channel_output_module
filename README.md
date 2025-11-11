@@ -32,10 +32,12 @@ The DevLab PWM AO4410 2-Channel Output Module is a compact, two-channel PCB desi
 
 | Feature             | Details                                                 |
 |---------------------|---------------------------------------------------------|
-| 2-channel PWM       | Two independent channels for versatile control        |
-| 5V logic            | Compatible with 3.3V and 5V microcontrollers            |
-| 5V power supply     | Powers external devices up to 2A                        |
-| Qwiic connector     | 4-pin connector for easy integration                   |
+| 2-channel PWM       | Two independent channels for versatile control          |
+| 5V & 3.3V logic     | Compatible with 3.3V and 5V microcontrollers            |
+| External loads      | Power external devices up to 200 W                      |
+| Mode selection      | Use "direct PWM" or an isolated mode with optocoupler   |
+| Qwiic connector     | 4-pin connector for easy integration                    |
+| Isolated grounds    | Couple or isolate grounds using a DIP switch           |  
 
 </div>
 
