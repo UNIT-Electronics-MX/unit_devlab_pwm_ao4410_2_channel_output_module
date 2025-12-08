@@ -1,6 +1,5 @@
 # DevLab: PWM AO4410 2-Channel Output Module
 
-## Introduction
 
 The DevLab PWM AO4410 2-Channel Output Module is a compact, two-channel PCB designed to amplify pulse-width modulation signals from a microcontroller. It enables reliable switching of external loads at higher voltages and currents than the microcontroller can natively handle. With its clearly labeled screw-terminal connectors, the module is well-suited for motor speed control, high-power LED dimming, and other projects requiring precise power regulation via PWM. The board also includes a QWIIC-compatible 4-pin header, allowing for easy plug-and-play wiring and daisy-chaining of power and PWM signals using standard Qwiic cables.
 
