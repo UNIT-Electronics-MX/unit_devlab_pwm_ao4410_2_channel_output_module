@@ -52,7 +52,7 @@ The DevLab PWM AO4410 2-Channel Output Module is a compact, two-channel PCB desi
 ## Resources
 
 
-- [Pinout Diagram](hardware/resources/unit_pinout_v_0_0_1_ue0054_pwm_module_en.png)
+- [Pinout Diagram](hardware/unit_pinout_v_0_0_2_ue0083_pwm_module_en.pdf)
 - [Schematic Diagram](hardware/unit_schematic_v_0_0_1_ue0083_PWM-Module.pdf)
 - [Code Examples](software/examples)
 - [Purchase Link](https://uelectronics.com/)
