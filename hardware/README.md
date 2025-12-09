@@ -31,7 +31,7 @@
 
 <div align="center">
 
-<a href="#"><img src="resources/unit_pinout_v_0_0_1_ue0054_pwm_module_en.jpg" width="500px"><br/> Pinout</a>
+<a href="./unit_pinout_v_0_0_2_ue0083_pwm_module_en.pdf"><img src="resources/unit_pinout_v_0_0_2_ue0083_pwm_module_en.jpg" width="500px"><br/> Pinout</a>
 <br/><br/>
 
 | Channel           | Description                                                                           | Control Pins | Power Pins | Load Terminals | Typical Use                           |
